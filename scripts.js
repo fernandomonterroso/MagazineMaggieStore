@@ -30,6 +30,11 @@ var jsonData = [
         "nombre": "Cerdido en mole",
         "precio": "25.2",
         "foto": "6.jpg"
+    },
+    {
+        "nombre": "nuevo pruducto",
+        "precio": "100",
+        "foto": "7.jpg"
     }
 ];
 
