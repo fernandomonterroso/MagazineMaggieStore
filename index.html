@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+          <h1>{{title}}</h1>
+        </div>
+        <ul>
+          <li v-for="item in items">
+            <!-- <h3 class="launch">{{item.name}}</h3>
+            <span>Username:&nbsp;&nbsp;{{item.username}}</span>
+            <span>Email:&nbsp;&nbsp;{{item.email}}</span>
+            <span>Phone:&nbsp;&nbsp;{{item.phone}}</span>
+            <span>Website:&nbsp;&nbsp;{{item.website}}</span> -->
+
+            <h3 class="launch">{{item.nombre}}</h3>
+            <span>Precio: &nbsp;&nbsp;{{item.precio}}</span>
+    
+            <span><img v-bind:src="'/fotos/' + item.foto"  alt="" srcset="" style="max-width: 300px;"></span>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+
+  <script type="text/javascript" language="javascript" src="datos.json"></script> 
+
+  <script src="scripts.js"></script>
